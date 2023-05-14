@@ -1,0 +1,25 @@
+---
+import MainHead from './MainHead.astro';
+
+interface Props{
+    title: string;
+    desc ?: string;
+}
+
+const { title, desc = "Hello World" } = Astro.props as Props
+
+---
+
+<html lang="en">
+	<MainHead  {title} {desc}/>
+	<body>
+		<slot />
+	</body>
+</html>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+	body{
+		font-family: 'Poppins', sans-serif;
+	}
+</style>
