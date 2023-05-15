@@ -1,8 +1,22 @@
 ---
 import MainLayout from "../Layouts/MainLayout.astro";
+
 ---
 
 <MainLayout title = "Home" desc="This is a normal description for Home Page">
-	<p>Hello World!</p>
+	<p>Hello <span>World!</span></p>
+	<p>Hello <span>World!</span></p>
+
 </MainLayout>
+
+
+<style lang="scss">
+	p{
+		color: red;
+		font-size: 2rem;
+		span{
+			color: blue	;	
+		}
+	}
+</style>
 
