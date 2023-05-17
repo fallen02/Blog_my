@@ -13,6 +13,7 @@ const { title, desc = "Hello World" } = Astro.props as Props
 <html lang="en">
 	<MainHead  {title} {desc}/>
 	<body>
+		<slot name='Header' />
 		<slot />
 	</body>
 </html>
